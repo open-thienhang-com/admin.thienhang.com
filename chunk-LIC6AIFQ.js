@@ -1,0 +1,1 @@
+var e={production:"https://api.thienhang.com",local:"http://localhost:8080"};function r(){try{if(typeof window<"u"){let o=window.__API_BASE__;if(o)return o;let n=localStorage.getItem("API_BASE");if(n)return n;let t=window.location.hostname;if(t==="localhost"||t==="127.0.0.1"||t.startsWith("192.168.")||t==="::1")return e.local}}catch{}return e.production}export{r as a};
